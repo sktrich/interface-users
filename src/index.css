@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    #8684c9 0%,
+    rgba(108, 106, 223, 0.8) 100%
+  );
+}
+
+@font-face {
+  font-family: YOZ;
+  src: url(./assets/YOZAKURA-Regular.otf);
+}
