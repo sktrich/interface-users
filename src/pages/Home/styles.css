@@ -3,6 +3,19 @@
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(0%, -60%); */
+
+  /* background: rgb(255 255 255 / 26%); */
+  /* border-radius: 0px; */
+  border: 1px solid rgb(255 255 255 / 15%);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25);
+
 }
 
 h1 {
@@ -17,14 +30,14 @@ form {
   gap: 30px;
   padding: 30px;
   border-radius: 10px;
-  background-color: #2e2d4e;
+  background-color: #2e2d4e4f;
   max-width: 90%;
   width: 400px;
   margin-bottom: 20px;
 
   & button {
     border-radius: 30px;
-    background-color: #8b8ae1;
+    background-color: #02020279;
     height: 40px;
     border: none;
     font-weight: bold;
@@ -51,7 +64,7 @@ form {
 .card {
   display: flex;
   justify-content: space-between;
-  background-color: #2e2d4e;
+  background-color: #2e2d4e4f;
   margin: 10px;
   padding: 10px;
   max-width: 95%;
@@ -71,13 +84,29 @@ form {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    opacity: 0.4;
+    
+    img{
+      filter: grayscale(0.5) invert();
+    }
   }
 
   & button:hover {
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }
 
 .card:hover {
   opacity: 0.9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

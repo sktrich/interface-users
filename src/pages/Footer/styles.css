@@ -1,0 +1,19 @@
+.foo{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80%;
+
+    p{
+        font-size: 12px;
+        color: aliceblue;
+    }
+}
+
+.img-foo img{
+    width: 30%;
+    padding: 10px 10px;
+
+}

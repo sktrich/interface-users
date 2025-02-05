@@ -10,11 +10,11 @@ function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
   
-function limpaInputs(){
-   inputName.current.value = '',
-   inputAge.current.value = '',
-   inputEmail.current.value = ''
-}
+  function limpaInputs(){
+    inputName.current.value = '',
+    inputAge.current.value = '',
+    inputEmail.current.value = ''
+  }
 
   async function getUsers() {
     const usersFromApi = await api.get('/users') 
@@ -50,7 +50,7 @@ function limpaInputs(){
           <h1>Cadastro de Usuários</h1>
           <input placeholder="Nome" name="nome" type="text" ref={inputName}/>
           <input placeholder="Idade" name="idade" type="number" ref={inputAge}/>
-          <input placeholder="Email" name="email" type="email" ref={inputEmail}/>
+          <input placeholder="Email" name="email" type="email" autoComplete="off" ref={inputEmail}/>
           <button type="button" onClick={createUsers}>Cadastrar</button>
         </form>
 
