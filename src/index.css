@@ -76,3 +76,19 @@ body {
   --gradient-color-4: #ffcb57;
   z-index: 0;
 }
+
+
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2e2d4e4f;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #48456c;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #2e2d4e4f;  /* creates padding around scroll thumb */
+}

@@ -54,25 +54,33 @@ function Home() {
           <button type="button" onClick={createUsers}>Cadastrar</button>
         </form>
 
-        {users.map((user) => (
-          <div key={user.id} className="card">
-            <div>
-              <p>
-                Nome: <span>{user.name}</span>
-              </p>
-              <p>
-                Idade: <span>{user.age} </span>
-              </p>
-              <p>
-                Email: <span>{user.email}</span>
-              </p>
+        <div className="users-container">
+          {/* 
+            sort((a,b)=> a.name.localeCompare(b.name)) ordenar por nome 
+            sort((a,b) => a.age - b.age) ordenar por idade
+            sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp)) por data 
+            sort((a,b) => a.id - b.id) por id
+          */}
+          {[...users].map((user) => (
+            <div key={user.id} className="card">
+              <div>
+                <p>
+                  Nome: <span>{user.name}</span>
+                </p>
+                <p>
+                  Idade: <span>{user.age} </span>
+                </p>
+                <p>
+                  Email: <span>{user.email}</span>
+                </p>
+              </div>
+              <button onClick={() => deleteUsers(user.id)}>
+                <img src={Trash} alt="Lixeira" width="20" height="20" />
+              </button>
+              
             </div>
-            <button onClick={() => deleteUsers(user.id)}>
-              <img src={Trash} alt="Lixeira" width="20" height="20" />
-            </button>
-            
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
