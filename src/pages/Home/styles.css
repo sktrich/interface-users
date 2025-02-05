@@ -1,4 +1,5 @@
 .container {
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -21,8 +22,8 @@
 
 .users-container{
   background-color: #2e2d4e4f;
-
-  max-height: 350px; /* Define a altura máxima antes de aparecer a barra de rolagem */
+  max-width: 444px;
+  max-height: 400px; /* Define a altura máxima antes de aparecer a barra de rolagem */
   overflow-y: auto;  /* Ativa a rolagem vertical quando necessário */
   margin-top: 10px;
   /* border: 1px solid #ddd; */
@@ -62,7 +63,7 @@ form {
   border-radius: 10px;
   background-color: #2e2d4e4f;
   max-width: 90%;
-  width: 400px;
+  width: 444px;
   margin-bottom: 20px;
 
   & button {
