@@ -6,7 +6,8 @@ import Footer from "./pages/Footer";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Footer />
     <Home />
-    <Footer/>
+    <Footer />
   </StrictMode>
 );

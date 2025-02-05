@@ -70,6 +70,7 @@ function Home() {
             <button onClick={() => deleteUsers(user.id)}>
               <img src={Trash} alt="Lixeira" width="20" height="20" />
             </button>
+            
           </div>
         ))}
       </div>
