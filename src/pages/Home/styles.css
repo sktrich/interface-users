@@ -111,7 +111,7 @@ form {
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #2e2d4e4f;
   margin: 10px;
   padding: 10px;
