@@ -10,8 +10,8 @@
     min-height: 100px;
 }
 
+
 .img-foo{
-    /* width: 35%; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -38,6 +38,7 @@
     font-size: 18px;
     color: aliceblue;
     opacity: 0.8;
+    margin: 5px;
 
     span{
         color: yellowgreen;
@@ -54,6 +55,20 @@ a{
 a:hover{
     color: antiquewhite;
 }
+
+@media (max-width: 500px ) {
+    .foo{
+        flex-direction: column;
+    }
+
+    .img-foo {
+        img{
+            width: 38px;
+        }
+    }
+    
+}
+
 /* 
 .tooltip{
     position: relative;
