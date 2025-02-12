@@ -1,5 +1,5 @@
 import "./styles.css";
-import ReactLogo from "/eact-80.png";
+import Node from "/nó-js-48.png";
 import ViteLogo from "/vite.svg"
 import NextLogo from "/nextjs-48.png"
 import VercelLogo from "/vercel_favicon.svg"
@@ -12,11 +12,18 @@ function Footer(){
         <>
             <footer className="foo"> 
                 <div className="img-foo">
-                    <img src={ReactLogo} alt="React" />    
-                    <img src={ViteLogo} alt="Vite" />
-                    <img src={NextLogo}alt="Next" />
-                    <img src={VercelLogo} alt="Vercel" /> 
-                    <img src={MongoDb} alt="MongoDb" />                    
+                    <a href="https://nodejs.org/" target="_blank">
+                        <img src={Node} alt="Node Js" />   
+                    </a> 
+                    <a href="https://vite.dev/" target="_blank">
+                        <img src={ViteLogo} alt="Vite" />
+                    </a>
+                    <a href="https://nextjs.org/" target="_blank">
+                        <img src={NextLogo} alt="Next Logo" />                    
+                    </a>
+                    <a href="https://www.mongodb.com/" target="_blank">
+                        <img src={MongoDb} alt="MongoDb" />                    
+                    </a>
 
                 </div>
                 <p>Desenvolvido por <a href="https://wa.me/5511961544855?text=Olá,%20tenho%20interesse%20em%20saber%20mais" target="_blank"><span>n4k</span></a> </p>
