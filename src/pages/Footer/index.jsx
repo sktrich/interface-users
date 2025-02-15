@@ -1,8 +1,8 @@
 import "./styles.css";
 import Node from "/nó-js-48.png";
 import ViteLogo from "/vite.svg"
+import ReactLogo from "/react-48.png"
 import NextLogo from "/nextjs-48.png"
-import VercelLogo from "/vercel_favicon.svg"
 import MongoDb from "/mongo-db-48.png"
 
 
@@ -17,6 +17,9 @@ function Footer(){
                     </a> 
                     <a href="https://vite.dev/" target="_blank">
                         <img src={ViteLogo} alt="Vite" />
+                    </a>
+                    <a href="https://react.dev/" target="_blank">
+                        <img className="spin" src={ReactLogo} alt="React Logo" />                    
                     </a>
                     <a href="https://nextjs.org/" target="_blank">
                         <img src={NextLogo} alt="Next Logo" />                    
